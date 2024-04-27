@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+/*reset*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+      
+      --text-color:white;
+      --primary-text-color:#101b58;
+      --secondary-text-color:darkslateblue;
+      --body-primary-color:#101b58;
+      --body-secondary-color: darkslateblue;
+      --color: #273893;
+
+      
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+    
+    min-height:100vh;
+    
+}
+  
+h1{
+    font-size: 5rem !important;
+}
+h2{
+    font-size: 3rem !important;
+}
+p{
+    font-size: 1.1rem !important;
+    color: var(--text-color);
+}
+h3{
+    font-size: 1.3rem !important; 
+    color: var(--text-color) !important;
+}
+
+
+ a{
+    text-decoration: none !important; 
+    cursor: pointer;
+    
+} 
+a:hover{
+    transform: scale(1.1) !important;
+
+}
+/*utility classes*/
+
+/*navbg*/
+.navbg{
+    background-color: #273893;
+}
+
+/*image height*/
+.imgheight img{
+    min-height: 100vh;
+    
+}
+
+/*content top*/
+.contentup{
+    color: var(--text-color);
+   
+    
+    
+    font-size: 2rem;
+    position: fixed;
+    top: 250px;
+    margin: 2rem;
+
+}
+
+/*header*/
+.headerbg{
+    background: linear-gradient(to top left,rgba(71, 61, 139, 0.8),#101b58);
+    min-height: 300px;
+color: var(--text-color);
+display: flex;
+flex-direction: column;
+justify-content: center;
+ align-items: center;
+text-align: center;
+margin-top:200px;
+animation: movel 2s ease 1s;
+
+
+
+}
+
+
+
+/*card*/
+
+.cardchange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1rem;
+    text-align: center;
+}
+.card{
+     background: linear-gradient(to top left,var(--body-secondary-color),var(--body-primary-color) ); 
+    width:300px;
+    height: 400px !important;
+    animation: slide 2s ease 1s; 
+    
+    
+    
+}
+.card-title{
+    color: gold !important;
+}
+
+ .circle{
+    height:200px !important;
+    padding: 1rem;
+}
+
+.card:hover{
+    box-shadow: 4px 4px 5px rgba(209, 180, 18, 1);
+    transform: scale(1.01);
+}
+/*ourapproach*/
+#imgoverly{
+     background: linear-gradient(rgba(71, 61, 139, 0.0),#101b58),url(image2.jpg) !important; 
+   
+    background-size: cover;
+    font-weight: bolder;
+    
+    
+    
+}
+/*rpo*/
+#imagebg{
+    box-shadow: 4px 4px 5px #101b58;
+    background: linear-gradient(to top left,darkslateblue,rgba(255, 255, 255,0.9));
+    font-weight: bolder;
+    
+}
+#imagebg h3{
+    color:#101b58 !important;
+}
+
+
+
+
+
+/*card animation*/
+@keyframes slide{
+    from{
+        transform: translatex(1000px);
+    }
+    to{
+        transform: translatex(0px);
+    }
+} 
+
+
+ .card:nth-child(2){
+    animation-duration: 4s;
+    background-color: white;
+}
+.card:nth-child(3){
+    animation-duration: 5s;
+    background-color: red;
+}
+.card:nth-child(4){
+    animation-duration: 6s;
+    background-color: blue;
+} 
+
+
+/*animation*/
+
+#animatel{
+    animation: movel 2s ease 1s;
+}
+#animater{
+    animation: mover 2s ease 1s;
+}
+@keyframes movel{
+    0%{
+       transform: translatex(-100%);
+    }
+}
+
+@keyframes mover{
+    0%{
+        transform: translatex(100%);
+    }
+}
